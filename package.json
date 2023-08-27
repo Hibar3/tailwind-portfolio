@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "next dev",
-    "dev": "cross-env INIT_CWD=$PWD next dev",
+    "dev": "cross-env next dev",
     "build": "cross-env INIT_CWD=$PWD next build && cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/postbuild.mjs",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
@@ -16,6 +16,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.13",
     "contentlayer": "0.3.4",
+    "daisyui": "^3.6.3",
     "esbuild": "0.18.11",
     "github-slugger": "^1.4.0",
     "gray-matter": "^4.0.2",
